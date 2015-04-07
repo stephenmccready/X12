@@ -29,7 +29,7 @@ Creates and populates a table, tbl_TA1_InterChangeNoteCode that contains the X12
 Creates a stored procedure that imports, parses and outputs an email containing the X12 TA1 acknowledgement file with response messages.<br />
 <i>Note: Requires SQLCreate_X12_TA1_InterChangeNoteCode, created by the above</i>
 
-<b>837_ImportHack</b><br />
+<b>X12_837_ImportHack</b><br />
 T-SQL only. Imports an 837 into a table and groups the segments by Hierarchical Level so that related data segments may be grouped together. <i>(this was a bit of a hack I used to do a quick and dirty reconciliation, but it's come in useful for ad hoc tasks involving X12 formatted files</i><br />
-837_ImportHack_CreateTables.sql<br />
-837_ImportHack.sql<br />
+X12_837_ImportHack_CreateTables.sql<br />
+X12_837_ImportHack.sql<br />
