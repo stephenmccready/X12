@@ -23,7 +23,7 @@ Creates a stored procedure that imports, parses and outputs an email containing 
 <i>Note: Requires SQLCreate_X12_999_ErrorMessageTable, created by the above</i>
 
 <b>SQLCreate_TA1_InterChangeNoteCode:</b><br />
-Creates and populates a table, tbl_TA1_InterChangeNoteCode that contains the X12 TA1 Interchange Note Codes and descriptions.</br />
+Creates and populates a table, tbl_TA1_InterChangeNoteCode that contains the X12 TA1 Interchange Note Codes and descriptions.<br />
 
 <b>Import_X12_TA1:</b><br />
 Creates a stored procedure that imports, parses and outputs an email containing the X12 TA1 acknowledgement file with response messages.<br />
