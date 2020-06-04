@@ -33,7 +33,7 @@ Creates a stored procedure that imports, parses and outputs an email containing 
 T-SQL only. Imports an X12 into a table and groups the segments by Hierarchical Level so that related data segments may be grouped together. <i>(this was a bit of a hack I used to do a quick and dirty reconciliation, but it's come in useful for ad hoc tasks involving X12 formatted files</i>)<br />
 See also:<br />
 X12_Import_CreateTables.sql<br />
-X12_Import_Cursor.sql<br />
+X12_Import_Files.sql<br />
 
 <b>X12_270_Export_Template.sql</b><br />
 Template for outputting an X12 270 Eligibility Inquiry using MS SQL<br />
