@@ -1,10 +1,12 @@
 -- Table to hold the raw data imported via BULK INSERT command
-Create Table dbo.tbl_837_IN (
+Drop Table dbo.tbl_X12_IN
+Create Table dbo.tbl_X12_IN (
 	 Field01	VarChar(512)
 )
 
 -- Table to hold the formatted data
-Create Table dbo.tbl_837 (
+Drop Table dbo.tbl_X12
+Create Table dbo.tbl_X12 (
 	   ID int IDENTITY(1,1) PRIMARY KEY
 	 , HierarchicalLevel Int Null
 	 , SegmentID VarChar(8)
@@ -20,3 +22,7 @@ Create Table dbo.tbl_837 (
 	 , ImportFilename VarChar(256)
 	 , ImportDate DateTime
 )
+
+Create Index ix_ID On dbo.tbl_X12(ID)
+Create Index ix_HierarchicalLevel On dbo.tbl_X12(HierarchicalLevel)
+Create Index ix_SegmentID On dbo.tbl_X12(SegmentID)
